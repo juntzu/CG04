@@ -42,8 +42,9 @@ subroutine compute_density_matrix(det,Ndet,coef,mo_num, &
   !loop over all characters in string
     do i=1,Nint
       buffer = det(i,ispin,k)
-	 write (*,*) "Buffer = ", buffer
+	 
       do while (buffer /= 0_8)
+       write (*,*) "Buffer = ", buffer
 	  write (*,*) "  trailz(buffer) = ", trailz(buffer) 
 	  write (*,*) "  ishift = ", ishift
         write (*,*) " before j = ", j
@@ -52,7 +53,7 @@ subroutine compute_density_matrix(det,Ndet,coef,mo_num, &
         density_matrix(j,j) = density_matrix(j,j) &
                             + coef(k)*coef(k)
         buffer = iand(buffer,buffer-1_8)
-	   write (*,*) "Buffer = ", buffer
+	   
 	   write (*,*) "************"
       end do
       ishift = ishift+64
