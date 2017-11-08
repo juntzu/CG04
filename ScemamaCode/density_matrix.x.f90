@@ -31,21 +31,29 @@ subroutine compute_density_matrix(det,Ndet,coef,mo_num, &
  double precision :: phase, c
  integer :: n_excitations
 
+!k = determinant index
+!i = character of string
  density_matrix = 0.d0
+!loop over all determinants
  do k=1,Ndet
+!loop over spin 0,1
   do ispin=1,2
     ishift = 0
+  !loop over all characters in string
     do i=1,Nint
       buffer = det(i,ispin,k)
 	 write (*,*) "Buffer = ", buffer
       do while (buffer /= 0_8)
 	  write (*,*) "  trailz(buffer) = ", trailz(buffer) 
 	  write (*,*) "  ishift = ", ishift
+        write (*,*) " before j = ", j
         j = trailz(buffer) + ishift + 1
-        write (*,*) "  j = ", j
+        write (*,*) " after j = ", j
         density_matrix(j,j) = density_matrix(j,j) &
                             + coef(k)*coef(k)
         buffer = iand(buffer,buffer-1_8)
+	   write (*,*) "Buffer = ", buffer
+	   write (*,*) "************"
       end do
       ishift = ishift+64
     end do
