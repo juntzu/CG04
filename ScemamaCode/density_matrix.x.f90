@@ -52,6 +52,7 @@ subroutine compute_density_matrix(det,Ndet,coef,mo_num, &
         write (*,*) " after j = ", j
         density_matrix(j,j) = density_matrix(j,j) &
                             + coef(k)*coef(k)
+	   write (*,*) "buffer-1_8 = ", buffer-1_8
         buffer = iand(buffer,buffer-1_8)
 	   
 	   write (*,*) "************"
