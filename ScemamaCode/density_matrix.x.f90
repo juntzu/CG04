@@ -32,38 +32,44 @@ subroutine compute_density_matrix(det,Ndet,coef,mo_num, &
  integer :: n_excitations
 
 !k = determinant index
-!i = character of string
+
  density_matrix = 0.d0
-!loop over all determinants
  do k=1,Ndet
-!loop over spin 0,1
   do ispin=1,2
     ishift = 0
-  !loop over all characters in string
     do i=1,Nint
       buffer = det(i,ispin,k)
-	 
       do while (buffer /= 0_8)
-       !write (*,*) "Buffer = ", buffer
-	  !write (*,*) "  trailz(buffer) = ", trailz(buffer) 
-	  !write (*,*) "  ishift = ", ishift
-        !write (*,*) " before j = ", j
         j = trailz(buffer) + ishift + 1
-        !write (*,*) " after j = ", j
         density_matrix(j,j) = density_matrix(j,j) &
                             + coef(k)*coef(k)
-	   !write (*,*) "buffer-1_8 = ", buffer-1_8
         buffer = iand(buffer,buffer-1_8)
-	   
-	   !write (*,*) "************"
-      end do
-      write (*,*) "************"
-      write (*,*) "  ishift = ", ishift
+      end do 
       ishift = ishift+64
-      write (*,*) "  ishift = ", ishift
     end do
-  end do
+  end dowrite (*,*) " before j = ", j
+
+
+      !DET calculates the determinant of M1 in a single arithmetic
+      !expression which is, effectively, the expansion of M1 about its
+      !first row.  Since the calculation of the determinant involves
+      !the multiplication of numbers whose magnitudes are unrestricted,
+      !there is the possibility of floating point overflow or underflow.
+      !NO error checking or recovery is implemented in this routine.
+
+
+!The current execution cycle of the named (or innermost) DO construct is terminated.
+!If a DO construct name is specified, the CYCLE statement must be within the range of that construct.
+
+!The iteration count (if any) is decremented by 1.
+!The DO variable (if any) is incremented by the value of the increment parameter (if any).
+!A new iteration cycle of the DO construct begins.
+
+
+
+
   do l=1,k-1
+   write (*,*) " n_excitations ", l
    if (n_excitations(det(1,1,k),det(1,1,l),Nint) /= 1) then
      cycle
    end if
