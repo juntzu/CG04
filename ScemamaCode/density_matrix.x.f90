@@ -44,20 +44,23 @@ subroutine compute_density_matrix(det,Ndet,coef,mo_num, &
       buffer = det(i,ispin,k)
 	 
       do while (buffer /= 0_8)
-       write (*,*) "Buffer = ", buffer
-	  write (*,*) "  trailz(buffer) = ", trailz(buffer) 
-	  write (*,*) "  ishift = ", ishift
-        write (*,*) " before j = ", j
+       !write (*,*) "Buffer = ", buffer
+	  !write (*,*) "  trailz(buffer) = ", trailz(buffer) 
+	  !write (*,*) "  ishift = ", ishift
+        !write (*,*) " before j = ", j
         j = trailz(buffer) + ishift + 1
-        write (*,*) " after j = ", j
+        !write (*,*) " after j = ", j
         density_matrix(j,j) = density_matrix(j,j) &
                             + coef(k)*coef(k)
-	   write (*,*) "buffer-1_8 = ", buffer-1_8
+	   !write (*,*) "buffer-1_8 = ", buffer-1_8
         buffer = iand(buffer,buffer-1_8)
 	   
-	   write (*,*) "************"
+	   !write (*,*) "************"
       end do
+      write (*,*) "************"
+      write (*,*) "  ishift = ", ishift
       ishift = ishift+64
+      write (*,*) "  ishift = ", ishift
     end do
   end do
   do l=1,k-1
