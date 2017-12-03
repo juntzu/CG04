@@ -50,7 +50,7 @@ subroutine compute_density_matrix(det,Ndet,coef,mo_num, &
   end do
 
   do l=1,k-1
-   write (*,*) " n_excitations ", l
+   !write (*,*) " n_excitations ", l
    if (n_excitations(det(1,1,k),det(1,1,l),Nint) /= 1) then
      cycle
    end if

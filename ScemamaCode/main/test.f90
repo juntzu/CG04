@@ -18,7 +18,7 @@
 
   program test
     implicit none
-    integer,parameter  :: Nint=2, ndet=10000
+    integer,parameter  :: Nint=2, ndet=10
     integer*8  :: det(Nint,2,ndet)
     integer    :: N_int
     integer :: n_excitations
