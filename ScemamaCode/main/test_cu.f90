@@ -46,9 +46,10 @@
 		do k1 = 1, 2
 			do k2 = 1, ndet
 				
-				print *,  '_cu k1 = ', k1
-				print *,  'det = ', det(ic, k1, k2)
-				print *,  '*****************'
+				!print *,  '_cu k1 = ', k1
+				!print *,  'det = ', det(ic, k1, k2)
+				!print *,  '*****************'
+				 print *, 0_8
 			enddo
 		enddo
 	enddo
