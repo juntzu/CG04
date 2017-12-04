@@ -39,20 +39,22 @@
     N_int = Nint
     call read_input(det,N_int,coef,ndet,'cu.dat','cu.coef')
 
-    print *,  'ndet = ', ndet
+    !print *,  'ndet = ', ndet
 	
+	do ic = 1, ndet
+		 print *,  'coef = ', coef[ic]
 	
-	do ic = 1, Nint
+	!do ic = 1, Nint
 		do k1 = 1, 2
 			do k2 = 1, ndet
 				
 				!print *,  '_cu k1 = ', k1
 				!print *,  'det = ', det(ic, k1, k2)
 				!print *,  '*****************'
-				 print *, 0_8
+				 !print *, 0_8
 			enddo
 		enddo
-	enddo
+	!enddo
 	
     !-------------------------------------------------
     t=0.d0
