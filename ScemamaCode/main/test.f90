@@ -42,10 +42,11 @@
     print *,  'ndet = ', ndet
 	
 	
-	do ic = 1, 2
+	do ic = 1, Nint
 		do k1 = 1, 2
-			do k2 = 1, 10
-				print *,  'ic = ', ic
+			do k2 = 1, ndet
+				print *,  'k1 = ', k1
+				print *,  'det = ', det(ic, k1, k2)
 				print *,  '*****************'
 			enddo
 		enddo
