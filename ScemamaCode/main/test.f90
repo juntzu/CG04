@@ -40,6 +40,18 @@
     call read_input(det,N_int,coef,ndet,'h2o_determinants.dat','cu.coef')
 
     print *,  'ndet = ', ndet
+	
+	
+	do ic = 1, 2
+		do k1 = 1, 2
+			do k2 = 1, 10
+				print *,  'ic = ', ic
+				print *,  '*****************'
+			enddo
+		enddo
+	enddo
+	
+	
     !-------------------------------------------------
     t=0.d0
     t2=0.d0
