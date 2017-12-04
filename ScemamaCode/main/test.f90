@@ -34,8 +34,8 @@
     double precision :: coef(ndet)
     integer, parameter :: mo_num = 105
     double precision :: density_matrix(mo_num,mo_num)
-    integer,parameter  :: lmax = 10000
-    integer:: res
+    integer,parameter  :: lmax = 10
+    integer:: res, ic, k1, k2
     N_int = Nint
     call read_input(det,N_int,coef,ndet,'h2o_determinants.dat','cu.coef')
 
