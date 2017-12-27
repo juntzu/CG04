@@ -18,7 +18,7 @@
 
   program test
     implicit none
-    integer,parameter  :: Nint=2, ndet=10
+    integer,parameter  :: Nint=2, ndet=10000
     integer*8  :: det(Nint,2,ndet)
     integer    :: N_int
     integer :: n_excitations
@@ -34,25 +34,12 @@
     double precision :: coef(ndet)
     integer, parameter :: mo_num = 105
     double precision :: density_matrix(mo_num,mo_num)
-    integer,parameter  :: lmax = 10
-    integer:: res, ic, k1, k2
+    integer,parameter  :: lmax = 10000
+    integer:: res
     N_int = Nint
     call read_input(det,N_int,coef,ndet,'h2o_determinants.dat','cu.coef')
 
     print *,  'ndet = ', ndet
-	
-	
-	do ic = 1, Nint
-		do k1 = 1, 2
-			do k2 = 1, ndet
-				print *,  'k1 = ', k1
-				print *,  'det = ', det(ic, k1, k2)
-				print *,  '*****************'
-			enddo
-		enddo
-	enddo
-	
-	
     !-------------------------------------------------
     t=0.d0
     t2=0.d0

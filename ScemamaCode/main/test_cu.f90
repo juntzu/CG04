@@ -18,7 +18,7 @@
 
   program test
     implicit none
-    integer,parameter  :: Nint=1, ndet=10
+    integer,parameter  :: Nint=1, ndet=10000
     integer*8  :: det(Nint,2,ndet)
     integer :: n_excitations
     integer    :: i,k,l
@@ -33,29 +33,13 @@
     double precision :: coef(ndet)
     double precision :: error
     integer, parameter :: mo_num = 49
-     integer:: res, ic, k1, k2
+    integer:: res
     double precision :: density_matrix(mo_num,mo_num)
-    integer,parameter  :: lmax = 10
+    integer,parameter  :: lmax = 10000
     N_int = Nint
     call read_input(det,N_int,coef,ndet,'cu.dat','cu.coef')
 
-    !print *,  'ndet = ', ndet
-	
-	do ic = 1, ndet
-		 print *,  'coef = ', coef[ic]
-	
-	!do ic = 1, Nint
-		do k1 = 1, 2
-			do k2 = 1, ndet
-				
-				!print *,  '_cu k1 = ', k1
-				!print *,  'det = ', det(ic, k1, k2)
-				!print *,  '*****************'
-				 !print *, 0_8
-			enddo
-		enddo
-	!enddo
-	
+    print *,  'ndet = ', ndet
     !-------------------------------------------------
     t=0.d0
     t2=0.d0

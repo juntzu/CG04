@@ -31,8 +31,6 @@ subroutine compute_density_matrix(det,Ndet,coef,mo_num, &
  double precision :: phase, c
  integer :: n_excitations
 
-!k = determinant index
-
  density_matrix = 0.d0
  do k=1,Ndet
   do ispin=1,2
@@ -44,13 +42,11 @@ subroutine compute_density_matrix(det,Ndet,coef,mo_num, &
         density_matrix(j,j) = density_matrix(j,j) &
                             + coef(k)*coef(k)
         buffer = iand(buffer,buffer-1_8)
-      end do 
+      end do
       ishift = ishift+64
     end do
   end do
-
   do l=1,k-1
-   !write (*,*) " n_excitations ", l
    if (n_excitations(det(1,1,k),det(1,1,l),Nint) /= 1) then
      cycle
    end if
