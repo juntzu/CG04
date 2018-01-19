@@ -1,0 +1,33 @@
+Meeting# 2
+Date: Thursday 26th Oct 2017 11:00
+Location: ECIT, Ground Floor Cafe
+Attendees: Dr Charles J Gillan, Mr Christopher Brown
+
+Item#1 - Fortran Compiler Issue
+---------------------------------
+
+Since the previous meeting, I have had difficulty setting up my local environment to compile Scemama's Fortran code. 
+I am using a 4770k Intel processor which has SSE4.2 instruction set. 
+The Make file uses iFort (Intel Fortran compiler), Charles suggested that I try using gFortran. 
+Suspected problem with $PATH variables, Charles suggested to replace $PATH variable reference to ifort in the Make file with the absolute path to Fortran compiler.
+Charles is also going to request me access to the Kelvin cluster at ECIT to compile there.   
+
+
+Item#2 - Some Additional context
+--------------------------------
+
+Dr Gillan has given me some additional context to the differences of C/C++ and Java, specifically relating to data structures I will be using in this project.
+- Use of pointers to access a Vector index in (1) time
+- Members of Structs are beside eachother in Memory
+
+Suggested to experiment further with pointers.
+
+Also some additional background theory for the Quantum Chemistry and some context to how it relates to bit set operations I will later use.
+- Spin orbitals are multiplied by spin up or spin down which giving a Spatial orbital. Up and down spin are represented in bitset matrices. 
+
+Outcomes:
+1. Dr Gillan to request access to Kelvin Cluster at ECIT for myself
+2. Attempt to compile locally with GFortran
+3. Attempt to reference absolute Compiler path in MakeFile
+4. Experiment further with c++ pointers.
+

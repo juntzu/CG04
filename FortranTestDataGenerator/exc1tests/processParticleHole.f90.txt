@@ -1,0 +1,25 @@
+program line60
+
+   integer :: exc(0:2,2,2)
+   integer*8 :: hole, particle, tz, ishift
+   hole = 100000000
+   particle = 10000
+   ishift = 0
+
+   if (particle /= 0_8) then
+       tz = trailz(particle)
+       exc(0,2,1) = 1
+       exc(1,2,1) = tz+ishift
+     end if
+     if (hole /= 0_8) then
+       tz = trailz(hole)
+       exc(0,1,1) = 1
+       exc(1,1,1) = tz+ishift
+     end if
+
+  print *, exc(0,2,1)
+  print *, exc(1,2,1)
+  print *, exc(0,1,1)
+  print *, exc(1,1,1)
+
+endprogram line60

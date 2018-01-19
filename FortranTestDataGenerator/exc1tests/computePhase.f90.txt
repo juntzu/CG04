@@ -1,0 +1,28 @@
+program computephase
+
+
+integer *8 :: exc(0:2,2,2)
+integer *8:: tz, l, ispin, ishift, nperm, i, j, k, m, n, high, low
+
+exc(0,2,1) = 1
+exc(1,2,1) = 4
+exc(0,1,1) = 1
+exc(1,1,1) = 8
+
+low  = min(exc(1,1,1),exc(1,2,1))
+high = max(exc(1,1,1),exc(1,2,1))
+
+ishift = 1
+
+print *, low, " ", high
+
+j = ishft(low-1,-6)+1
+n = iand(low-1,63)
+k = ishft(high-1,-6)+1
+m = iand(high-1,63)
+
+print *, j, " ", n, " ", k, " ", m
+
+
+
+end program computephase

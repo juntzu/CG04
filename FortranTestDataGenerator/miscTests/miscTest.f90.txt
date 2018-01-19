@@ -1,0 +1,13 @@
+program misctest
+
+integer *8 :: n, m
+n=3
+m = 7
+
+print *, ishft(1_8,n+1)+1_8
+print *, ishft(1_8,m)-1_8
+
+print *, not(ishft(1_8,n+1))+1_8 ,ishft(1_8,m)-1_8
+print *,  iand( not(ishft(1_8,n+1))+1_8 ,ishft(1_8,m)-1_8)
+
+end program misctest

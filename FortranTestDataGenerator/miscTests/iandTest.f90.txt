@@ -1,0 +1,13 @@
+program iamtest
+
+        integer *8 :: one, two, three
+
+        one = 10000
+        two = 1
+        three = 100140123
+
+        print *, iand(one, two)
+        print *, iand(one, one)
+        print *, iand(one, three)
+
+end program iamtest

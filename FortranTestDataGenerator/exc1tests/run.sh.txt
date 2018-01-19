@@ -1,0 +1,3 @@
+ifort ./tmpParticleHole.f90 -o ./tph.o
+ifort ./processParticleHole.f90 -o ./php.o
+ifort ./computePhase.f90 -o ./cp.o

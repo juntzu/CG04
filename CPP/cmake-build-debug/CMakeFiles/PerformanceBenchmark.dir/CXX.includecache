@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/chris/Documents/CG04/CPP/CountLeadingZeros.cpp
+CountLeadingZeros.h
+C:/Users/chris/Documents/CG04/CPP/CountLeadingZeros.h
+
+C:/Users/chris/Documents/CG04/CPP/CountLeadingZeros.h
+c++/bitset
+-
+
+C:/Users/chris/Documents/CG04/CPP/main.cpp
+

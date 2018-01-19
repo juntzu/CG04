@@ -1,0 +1,3 @@
+"D:\Program Files\JetBrains\CLion 2017.2.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\PerformanceSuite.dir/objects.a
+C:\tools\mingw64\bin\ar.exe cr CMakeFiles\PerformanceSuite.dir/objects.a @CMakeFiles\PerformanceSuite.dir\objects1.rsp
+C:\tools\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\PerformanceSuite.dir/objects.a -Wl,--no-whole-archive  -o PerformanceSuite.exe -Wl,--out-implib,libPerformanceSuite.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\PerformanceSuite.dir\linklibs.rsp

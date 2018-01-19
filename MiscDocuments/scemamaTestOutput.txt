@@ -1,0 +1,64 @@
+==============
+Cu, SSE2
+==============
+taskset -c 0 ./test_cu_sse2
+ ndet =        10000
+ Cycles n_excitations:   31.4585881600000       +/-   3.183786287913324E-005
+ CPU    n_excitations:   1.21081500000000     
+           0
+ Cycles get_excitation:   34.0952732800000       +/-   3.443744074200097E-005
+ CPU    get_excitation:   1.31280000000000     
+ Cycles zero   :   29.4324068338495       +/-   1.310410171539927E-004
+ Cycles single :   74.3388686666667       +/-   1.549639431487809E-003
+ Cycles double :   135.754711987076       +/-   1.101428624980848E-004
+ Cycles other  :   28.2711116575592       +/-   1.632043209979570E-005
+ Cycles density matrix :    31.9003573957396     
+ CPU    density matrix :   0.614906999999999     
+==============
+Cu, AVX
+==============
+taskset -c 0 ./test_cu_avx
+ ndet =        10000
+ Cycles n_excitations:   4.11498624000000       +/-   5.315425851799313E-006
+ CPU    n_excitations:  0.157976000000000     
+           0
+ Cycles get_excitation:   7.09569056000000       +/-   7.206832570719239E-006
+ CPU    get_excitation:  0.272958000000000     
+ Cycles zero   :   3.79640083924468       +/-   1.221879043965654E-005
+ Cycles single :   39.0651726666667       +/-   8.149181933742579E-004
+ Cycles double :   71.8580712116317       +/-   5.836939044084142E-005
+ Cycles other  :   3.33654626593807       +/-   1.930006315391471E-006
+ Cycles density matrix :    5.07977901790179     
+ CPU    density matrix :   9.798500000000043E-002
+==============
+H2O, SSE2
+==============
+taskset -c 0 ./test_h2o_sse2
+ ndet =        10000
+ Cycles n_excitations:   60.1219868800000       +/-   6.037144880993610E-005
+ CPU    n_excitations:   2.31564800000000     
+           0
+ Cycles get_excitation:   69.6608108800000       +/-   7.005310266918583E-005
+ CPU    get_excitation:   2.68359200000000     
+ Cycles zero   :   57.8365934658807       +/-   1.844003435523305E-004
+ Cycles single :   106.819831555556       +/-   1.487755464864705E-003
+ Cycles double :   169.351492419382       +/-   1.434258072638512E-004
+ Cycles other  :   57.7088493859940       +/-   3.193663572948424E-005
+ Cycles density matrix :    61.7829450145015     
+ CPU    density matrix :    1.18882000000000     
+==============
+H2O, AVX
+==============
+taskset -c 0 ./test_h2o_avx
+ ndet =        10000
+ Cycles n_excitations:   8.14791872000000       +/-   8.165170101008625E-006
+ CPU    n_excitations:  0.313952000000000     
+           0
+ Cycles get_excitation:   15.3569168000000       +/-   1.558765021331900E-005
+ CPU    get_excitation:  0.592910000000000     
+ Cycles zero   :   5.13184214207214       +/-   1.681696005823026E-005
+ Cycles single :   43.6957177777778       +/-   6.103407102288875E-004
+ Cycles double :   79.6759758230626       +/-   6.741730461651431E-005
+ Cycles other  :   6.44929501051001       +/-   3.589223676272987E-006
+ Cycles density matrix :    9.94179929992999     
+ CPU    density matrix :   0.191970000000000     

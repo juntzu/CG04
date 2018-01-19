@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="untitled1"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/chris/Documents/CG04/CPP/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/chris/Documents/CG04/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/chris/Documents/CG04/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/chris/Documents/CG04/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/chris/Documents/CG04/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/chris/Documents/CG04/CPP/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/chris/Documents/CG04/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/chris/Documents/CG04/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/chris/Documents/CG04/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/chris/Documents/CG04/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="UnitTests">
+				<Option output="C:/Users/chris/Documents/CG04/CPP/cmake-build-debug/UnitTests.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/chris/Documents/CG04/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/boost_1_65_1"/>
+					<Add directory="C:/tools/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/5.3.0/include"/>
+					<Add directory="C:/tools/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/5.3.0/include-fixed"/>
+					<Add directory="C:/tools/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/5.3.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/tools/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/c++"/>
+					<Add directory="C:/tools/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/tools/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/c++/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/chris/Documents/CG04/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 UnitTests"/>
+					<CompileFile command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/chris/Documents/CG04/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/chris/Documents/CG04/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/chris/Documents/CG04/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="UnitTests/fast">
+				<Option output="C:/Users/chris/Documents/CG04/CPP/cmake-build-debug/UnitTests.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/chris/Documents/CG04/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/boost_1_65_1"/>
+					<Add directory="C:/tools/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/5.3.0/include"/>
+					<Add directory="C:/tools/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/5.3.0/include-fixed"/>
+					<Add directory="C:/tools/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/5.3.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/tools/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/c++"/>
+					<Add directory="C:/tools/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/tools/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/c++/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/chris/Documents/CG04/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 UnitTests/fast"/>
+					<CompileFile command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/chris/Documents/CG04/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/chris/Documents/CG04/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/chris/Documents/CG04/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/chris/Documents/CG04/CPP/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/chris/Documents/CG04/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/chris/Documents/CG04/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/chris/Documents/CG04/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/chris/Documents/CG04/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/chris/Documents/CG04/CPP/BenchMarkSuite.h">
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/chris/Documents/CG04/CPP/CountLeadingZeros.cpp">
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/chris/Documents/CG04/CPP/CountLeadingZeros.h">
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/chris/Documents/CG04/CPP/CountTrailingZeros.h">
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/chris/Documents/CG04/CPP/DetReader.h">
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/chris/Documents/CG04/CPP/NaivePopcnt.h">
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/chris/Documents/CG04/CPP/compute_density_matrix.h">
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/chris/Documents/CG04/CPP/get_double_excitation.h">
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/chris/Documents/CG04/CPP/get_excitation.h.h">
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/chris/Documents/CG04/CPP/get_holes_and_particles.h">
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/chris/Documents/CG04/CPP/get_single_excitation.h">
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/chris/Documents/CG04/CPP/main.cpp">
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/chris/Documents/CG04/CPP/n_excitations.h">
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/chris/Documents/CG04/CPP/test.cpp">
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/chris/Documents/CG04/CPP/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

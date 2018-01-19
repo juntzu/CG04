@@ -1,0 +1,24 @@
+Meeting# 1
+Date: Wednesday 11th Oct 2017 14:15
+Location: Ashby 7.22
+Attendees: Dr Charles J Gillan, Mr Christopher Brown
+
+Item#1 - Project Description
+------------------------------------
+A Cornell University research paper, "An efficient implementation of Slater-Condon rules" by Anthony Scemama and Emmanuel Giner describes an implementation of Slater-Condon rules which takes advantage of bit manipulation instructions on x86 architectures with SSE4.2 instruction set.
+https://arxiv.org/abs/1311.6244
+
+The Authors of the paper have also created an open-source fortran implementation of these rules.
+https://github.com/scemama/slater_condon
+
+The goal of this project is to explore possible further optimisations of this solution and to create a new implementation in C/C++(using Boost library), optimised for more modern Intel chips. Depending on progress of the implementation, investigating the use of an FPGA system using OpenCL may also be in scope of the project.
+
+Outcomes:
+
+Dr Gillan has outlined some initial tasks
+
+1. Revise Standard Template Library in C++ (Vectors/Maps/List)
+2. Begin work on first implemtation in C
+3. Compile and run Scemama's Fortran implementation using provided test data
+4. Revise C++ library Boost  
+ 
